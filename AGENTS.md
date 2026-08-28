@@ -2,6 +2,10 @@
 
 This repository creates Codex adapters for selected Claude Code plugins maintained in the sibling `plugins-kit` repository.
 
+This is the **Codex-first** sibling. Agent guidance lives in `AGENTS.md`. This repository deliberately has no `CLAUDE.md`.
+
+The sibling `../plugins-kit` repository is Claude-first. Its `CLAUDE.md` contains the corresponding ownership rules.
+
 ## Purpose
 
 - Expose selected `plugins-kit` capabilities to Codex.
