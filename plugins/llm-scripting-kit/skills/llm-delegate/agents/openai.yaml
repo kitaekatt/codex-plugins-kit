@@ -1,0 +1,4 @@
+interface:
+  display_name: "LLM Delegate"
+  short_description: "Delegate work to configured LLM endpoints and harnesses."
+  default_prompt: "Delegate this work using an appropriate configured endpoint or harness."

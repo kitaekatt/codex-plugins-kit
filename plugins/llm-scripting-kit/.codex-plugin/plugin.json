@@ -1,0 +1,18 @@
+{
+  "name": "llm-scripting-kit",
+  "version": "0.1.0+codex.20260828175124",
+  "description": "Codex adapter for the llm-scripting-kit endpoint and harness library",
+  "author": {
+    "name": "kitaekatt"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "LLM Scripting Kit",
+    "shortDescription": "Delegate work to configured LLM endpoints and harnesses.",
+    "longDescription": "A thin Codex adapter over the canonical llm-scripting-kit library in plugins-kit.",
+    "developerName": "kitaekatt",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": "Delegate this work using an appropriate configured LLM endpoint or harness."
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "codex-plugins-kit",
+  "interface": {
+    "displayName": "Codex Plugins Kit"
+  },
+  "plugins": [
+    {
+      "name": "llm-scripting-kit",
+      "source": {
+        "source": "local",
+        "path": "./plugins/llm-scripting-kit"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "awesome-kit",
+      "source": {
+        "source": "local",
+        "path": "./plugins/awesome-kit"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
