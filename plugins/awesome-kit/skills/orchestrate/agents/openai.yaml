@@ -1,0 +1,4 @@
+interface:
+  display_name: "Orchestrate"
+  short_description: "Coordinate complex work across Codex agents and LLM backends."
+  default_prompt: "Orchestrate this work across the appropriate agents and configured backends."

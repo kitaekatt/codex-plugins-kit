@@ -44,6 +44,8 @@ Choose one plugin or an explicit source checkout when needed:
 ## Initial adapters
 
 - `llm-scripting-kit`: endpoint and harness delegation through the canonical upstream library.
-- `awesome-kit`: selected `orchestrate` and `task` capabilities. Capability content is not yet implemented.
+- `awesome-kit`: Codex-native orchestration plus the canonical interoperable `task` system.
+
+`orchestrate` prefers native Codex background agents and can route bounded work to every HTTP or CLI harness configured through `llm-scripting-kit`. `task` exposes all canonical task verbs while preserving the existing task files and `CLAUDE.md` hand-off contract.
 
 MCP is intentionally out of scope.

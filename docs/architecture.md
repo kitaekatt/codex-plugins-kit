@@ -33,4 +33,4 @@ The bootstrap package is installed only as a library dependency. The Claude boot
 
 The Awesome adapter will expose only `orchestrate` and `task`. It must call upstream behavior through public interfaces and host-profile seams rather than copying implementation. For initial interoperability, task context continues to use `CLAUDE.md`. Native Codex background agents remain the preferred Codex-native orchestration mechanism, while all configured llm-scripting-kit HTTP endpoints and CLI harnesses must remain usable.
 
-The exact skill behavior is deliberately deferred until the upstream interfaces are finalized.
+The Codex `orchestrate` skill owns host-native routing instructions while relying on the canonical `llm-scripting-kit` CLI for endpoint and harness execution. The Codex `task` launcher reads the editable upstream checkout from `runtime.json` and invokes the canonical task CLI; it translates only Claude tool-call presentation in `work` output, leaving task state and skill identities unchanged.

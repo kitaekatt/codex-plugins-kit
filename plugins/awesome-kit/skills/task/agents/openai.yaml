@@ -1,0 +1,4 @@
+interface:
+  display_name: "Task"
+  short_description: "Manage interoperable file-backed project tasks."
+  default_prompt: "Manage this project task using the canonical Awesome Kit task system."
