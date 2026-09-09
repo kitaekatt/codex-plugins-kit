@@ -9,3 +9,10 @@ dist/
 build/
 *.egg-info/
 .local/
+
+# Task folders live in the private tasks repo, mounted here via a link.
+# Both forms are load-bearing: the trailing-slash form matches the Windows
+# junction (a directory), the bare form the macOS/Linux symlink (a file).
+# See $DEVROOT/tasks/docs/onboarding-a-repo.md
+dev/tasks
+dev/tasks/
