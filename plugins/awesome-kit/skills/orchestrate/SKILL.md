@@ -1,6 +1,6 @@
 ---
 name: orchestrate
-description: Orchestrate significant multi-part work through native Codex background agents and llm-scripting-kit endpoints or harnesses while preserving the main context for coordination and synthesis. Do not use for a small single-step task.
+description: Use when significant work needs context-preserving delegation, even if sequential or indivisible. Do NOT use for small tasks fitting one cheap foreground call.
 ---
 
 # Orchestrate
@@ -43,13 +43,17 @@ verification rules.
 
 ## Procedure
 
-1. Confirm the task warrants orchestration. Delegate multiple independent
-   units or work that reads/emits much more material than its conclusion. Keep
-   a small self-contained unit inline.
+1. Confirm the task warrants orchestration. Delegate when several independent
+   units can run concurrently, one unit reads or emits much more material than
+   its conclusion, or the work is significant enough that preserving the main
+   context matters. In the last case, assign one end-to-end unit even when the
+   work is sequential or indivisible. Keep genuinely small, self-contained work
+   inline when it fits in one cheap foreground call.
 2. Discover configured LLM endpoints. Treat discovery output plus currently
    available native background-agent facilities as the runtime source of truth.
-3. Decompose the task. Record dependencies and assign one owner to every file.
-   Independent units run concurrently; dependent units wait.
+3. Decompose the task where that helps. Record dependencies and assign one
+   owner to every file. Independent units run concurrently; dependent units
+   wait. If no useful decomposition exists, keep one end-to-end unit.
 4. Route each unit. Prefer native Codex agents for ordinary repository work;
    choose a configured external model or harness for a requested model, an
    independent critique, different capabilities, or deliberate isolation.
