@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "directory": "plugins",
+  "decision": "page",
+  "source_sha": "c34636672571f4c1abefe61de7d13787e3cdac52",
+  "dirty": false,
+  "identity": "Thin Codex plugin adapters exposing orchestration, task management, and LLM delegation from the canonical plugins-kit checkout.",
+  "instructions": "",
+  "references": []
+}
