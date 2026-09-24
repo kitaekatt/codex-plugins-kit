@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "run_key": "f339e0e4d1677ebe77831edc6f00719aa8c0bdb04a87687baa666d489fb185ab",
+  "state": "complete",
+  "finished": [
+    "plugins/awesome-kit",
+    "plugins"
+  ]
+}
