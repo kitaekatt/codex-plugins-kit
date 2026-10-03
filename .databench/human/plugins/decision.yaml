@@ -1,11 +1,12 @@
 {
   "schema_version": 1,
   "directory": "plugins",
-  "decision": "page",
-  "source_sha": "6f4eb991557cb057629d6220c24249c9ceb15aa9",
-  "generation_spec_sha256": "0805933a1de089dc951a33d702e9d57d569f0584732b017cd3600742a34ba321",
+  "decision": "none",
+  "source_sha": "9ef7b20e84f989fcf2fa4d15aea409effec07cf1",
+  "input_sha256": "ff75b9b7a9e1aafbe09e2d04446aa2a953d837ef2717bf3f39f3b44bc7b89b3c",
+  "input_shape_sha256": "14f7993aefbb7eb4a1babdd158355c7ee60a58fc8665541a51042f7a86e38f2e",
   "dirty": false,
-  "identity": "Thin Codex adapter over the canonical llm-scripting-kit library for LLM delegation",
+  "identity": "",
   "instructions": "",
   "references": []
 }

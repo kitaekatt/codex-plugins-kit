@@ -1,11 +1,12 @@
 {
   "schema_version": 1,
   "directory": "plugins/awesome-kit",
-  "decision": "page",
-  "source_sha": "9b6c0ef570de44d2d6a5ad5bb479f609381b23e4",
-  "generation_spec_sha256": "0805933a1de089dc951a33d702e9d57d569f0584732b017cd3600742a34ba321",
+  "decision": "none",
+  "source_sha": "9ef7b20e84f989fcf2fa4d15aea409effec07cf1",
+  "input_sha256": "635cc1fee33aa6dc84baf855a5843da363f36785378f84ade9f9b585a19924be",
+  "input_shape_sha256": "7f458153e30f8165be1309e993c81010b340ea439f19d0b8bd9fa81e50312b01",
   "dirty": false,
-  "identity": "Codex plugin that adapts the Awesome Kit orchestrate and task skills",
+  "identity": "",
   "instructions": "",
   "references": []
 }
