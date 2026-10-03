@@ -62,7 +62,9 @@ def run(argv: list[str]) -> int:
     # The upstream script's Claude bootstrap guard should not redirect this
     # process into a Claude plugin venv. Dependencies already live in the
     # shared Codex runtime that invoked this adapter.
-    env["CLAUDE_BOOTSTRAP_DATA_ROOT"] = str(RUNTIME_ROOT / "bootstrap-disabled")
+    # A genuine caller redirect delegates interpreter selection to upstream.
+    if not env.get("CLAUDE_BOOTSTRAP_DATA_ROOT"):
+        env["_BOOTSTRAP_GUARD_VENV_REEXEC"] = "1"
     command = [sys.executable, str(script), *argv]
     if argv and argv[0] == "work":
         result = subprocess.run(command, env=env, text=True, capture_output=True)
